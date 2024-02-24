@@ -85,4 +85,20 @@
       WHERE precio >= 6600  
       AND precio <= 8000; 
 
+> Traer todos los destinos de la región 5
+
+    SELECT aeropuerto, precio      
+      FROM destinos    
+      WHERE idRegion = 5;
+
+> Traer todos los destinos de la región 3 y de la región 5  
+
+    SELECT aeropuerto, precio    
+       FROM destinos  
+       WHERE idRegion = 3
+       OR idRegion = 5;
+
+    SELECT aeropuerto, precio    
+       FROM destinos  
+       WHERE idRegion IN( 3, 5 );
 
