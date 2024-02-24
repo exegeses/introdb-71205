@@ -26,3 +26,12 @@
             alta = '2007-11-03'
         WHERE id = 4;
 
+> Modificar el idRegion del destino con id 5 
+> y del destino con id 6
+> asignarles el idRegion igual a 7
+
+    UPDATE destinos  
+      SET  
+            idRegion = 7  
+        WHERE idDestino IN( 5,6 ); 
+
